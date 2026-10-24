@@ -62,7 +62,7 @@ export function SiteHeader() {
           <TransitionLink
             href="/"
             {...introAttr}
-            className="col-span-2 text-[0.9375rem] font-semibold tracking-[-0.01em] whitespace-nowrap md:col-span-3"
+            className="col-span-2 justify-self-start py-3 text-[0.9375rem] font-semibold tracking-[-0.01em] whitespace-nowrap md:col-span-3"
             aria-label="ATELIER / FORM — home"
           >
             ATELIER <span className="text-stone">/</span> FORM

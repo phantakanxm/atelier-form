@@ -17,10 +17,10 @@ export function SiteFooter() {
 
           <nav aria-label="Footer" className="col-span-2 md:col-span-2 lg:col-span-2 lg:col-start-6">
             <p className="meta mb-5 text-ivory/60">Index</p>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
-                  <TransitionLink href={item.href} className="link-line text-sm">
+                  <TransitionLink href={item.href} className="link-line inline-flex min-h-8 items-center text-sm">
                     {item.label}
                   </TransitionLink>
                 </li>
@@ -30,10 +30,10 @@ export function SiteFooter() {
 
           <div className="col-span-2 md:col-span-2 lg:col-span-2">
             <p className="meta mb-5 text-ivory/60">Projects</p>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {projects.map((project) => (
                 <li key={project.slug}>
-                  <TransitionLink href={`/works/${project.slug}`} className="link-line text-sm">
+                  <TransitionLink href={`/works/${project.slug}`} className="link-line inline-flex min-h-8 items-center text-sm">
                     {project.name}
                   </TransitionLink>
                 </li>

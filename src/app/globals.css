@@ -26,6 +26,19 @@
 }
 
 @layer base {
+  /* Large displays: scale the rem so body copy and metadata keep pace with the grid */
+  @media (width >= 120rem) {
+    html {
+      font-size: 112.5%;
+    }
+  }
+
+  @media (width >= 150rem) {
+    html {
+      font-size: 125%;
+    }
+  }
+
   html {
     background: var(--color-ivory);
     color: var(--color-ink);
@@ -91,7 +104,7 @@
   }
 
   .display {
-    font-size: clamp(3rem, 11.6vw, 13rem);
+    font-size: clamp(2.5rem, min(11.6vw, 22svh), 13rem);
     font-weight: 600;
     line-height: 0.84;
     letter-spacing: -0.055em;
@@ -99,7 +112,7 @@
   }
 
   .headline {
-    font-size: clamp(2.5rem, 7.4vw, 8rem);
+    font-size: clamp(2.25rem, min(7.4vw, 16svh), 8rem);
     font-weight: 600;
     line-height: 0.88;
     letter-spacing: -0.05em;

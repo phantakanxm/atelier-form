@@ -132,7 +132,7 @@ export function ArchitecturalHero() {
         <span className="sr-only">Form follows feeling.</span>
         <span
           aria-hidden="true"
-          className="block text-[clamp(2.5rem,11.2vw,4.75rem)] leading-[0.84] font-semibold tracking-[-0.055em] uppercase md:text-[11vw] lg:text-[min(10.6vw,19svh)]"
+          className="block text-[clamp(2.25rem,11.2vw,4.75rem)] leading-[0.84] font-semibold tracking-[-0.055em] uppercase md:text-[min(11vw,19svh)] lg:text-[min(10.6vw,19svh)]"
         >
           <span className="line-mask">
             <span data-line data-hero-hide>
